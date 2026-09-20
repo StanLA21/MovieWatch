@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="MovieWatch - Stream your favorite movies, TV shows, and series online." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:opsz@14..32&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Manrope:wght@500&family=Martel:wght@400;600;700;800&display=swap"
+    rel="stylesheet">
+    <link rel="icon" type="image/png" href="./src/img/header/header-logo/logo.png" />
+  <title>MovieWatch — Login-Form</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <div class="header__container">
+        <a href="./index.html" class="header__logo">
+          <img src="./src/img/header/header-logo/logo.png" class="header__logo-img" alt="MovieWatch">
+        </a>
+        <nav class="header__menu menu">
+          <ul id="target" class="menu__list">
+            <li class="menu__item">
+              <a href="./index.html" class="menu__link">Home</a>
+            </li>
+            <li class="menu__item">
+              <a href="./index.html#Genres" class="menu__link">Genre</a>
+            </li>
+            <li class="menu__item">
+              <a href="./index.html#Movies" class="menu__link">Movies</a>
+            </li>
+            <li class="menu__item">
+              <a href="./tvshows.html" class="menu__link">TV Shows</a>
+            </li>
+            <li class="menu__item">
+              <a href="#Anime" class="menu__link">Anime</a>
+            </li>
+            <li class="menu__item">
+              <a href="./subscribe.html" class="menu__link">Subscriptions</a>
+            </li>
+          </ul>
+        </nav>
+        <div id="container-a" class="header__actions">
+          <div class="header__search">
+            <form class="header__search-form" action="" method="get">
+              <input class="header__search-input" type="text" placeholder="Search here." aria-label="Search input">
+              <button class="header__actions-btn" type="submit" aria-label="Search"></button>
+            </form>
+          </div>
+          <div id="child" class="header__login">
+            <a href="#" class="header__login-link">
+              <img src="./src/img/header/header-login/login-svg.svg" alt="" aria-hidden="true">
+              <span>Sign in/Sign up</span>
+            </a>
+          </div>
+          <div class="header__burger" role="button" aria-label="Toggle navigation menu" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="login">
+        <div class="login__container">
+          <div class="login__block">
+            <div class="login__card">
+              <h1 class="login__card--title"><span>Welcome</span> back</h1>
+              <form action="" class="login__form form" id="login-form">
+                <div class="form__group">
+                  <label for="user-email" class="form__label">Email</label>
+                  <input type="email" class="form__input" id="user-email" placeholder="Enter your email">
+                  <span class="form__error-text" id="email-error">Please enter a valid email address</span>
+                </div>
+                <div class="form__group">
+                  <label for="user-password" class="form__label">Password</label>
+                  <input type="password" class="form__input" id="user-password" placeholder="••••••••" minlength="6"
+                    maxlength="8">
+                  <span class="form__error-text" id="password-error">Password must be at least 6 characters</span>
+                </div>
+                <div class="remember__block">
+                  <div class="remember__group">
+                    <input type="checkbox" class="remember__input" id="remember-me">
+                    <label for="remember-me" class="remember__label">Remember me</label>
+                  </div>
+                  <a href="#" class="remember__link">Forget Password?</a>
+                </div>
+                <button class="form__btn" type="submit">Login</button>
+              </form>
+              <span class="span-or">OR</span>
+              <a href="#" class="form__link--google"> <img
+                  src="./src/img/login-form-fon/login-form-G-icon/login-form-G-icon.png" alt="Google Logo"> Sign up with Google</a>
+              <p class="sign-up">Don’t have an account yet? <a href="#" class="sign-up__link">Sign up</a></p>
+            </div>
+            <div class="login__img">
+              <img src="./src/img/login-form-fon/login-form-fon.png" alt="login-form-fon" loading="lazy">
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__container">
+        <div class="footer__flex-block">
+          <div class="footer__flex">
+            <div class="footer__block">
+              <h3 class="footer__title">Home</h3>
+              <ul class="footer__item">
+                <li class="footer__list">
+                  <a href="" class="footer__link">Categories</a>
+                </li>
+                <li class="footer__list">
+                  <a href="" class="footer__link">Devices</a>
+                </li>
+                <li class="footer__list">
+                  <a href="" class="footer__link">Pricing</a>
+                </li>
+                <li class="footer__list">
+                  <a href="" class="footer__link">FAQ</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__block">
+              <h3 class="footer__title">Movies</h3>
+              <ul class="footer__item">
+                <li class="footer__list">
+                  <a href="./index.html#Genres" class="footer__link">Genres</a>
+                </li>
+                <li class="footer__list">
+                  <a href="#" class="footer__link">Trending</a>
+                </li>
+                <li class="footer__list">
+                  <a href="#" class="footer__link">New Release</a>
+                </li>
+                <li class="footer__list">
+                  <a href="#" class="footer__link">Popular</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer__flex">
+            <div class="footer__block">
+              <h3 class="footer__title">Shows</h3>
+              <ul class="footer__item">
+                <li class="footer__list">
+                  <a href="./index.html#Genres" class="footer__link">Genres</a>
+                </li>
+                <li class="footer__list">
+                  <a href="#" class="footer__link">Trending</a>
+                </li>
+                <li class="footer__list">
+                  <a href="#" class="footer__link">New Release</a>
+                </li>
+                <li class="footer__list">
+                  <a href="#" class="footer__link">Popular</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__block">
+              <h3 class="footer__title">Support</h3>
+              <ul class="footer__item">
+                <li class="footer__list">
+                  <a href="./contact.html" class="footer__link">Contact Us</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer__flex">
+            <div class="footer__block">
+              <h3 class="footer__title">Subscription</h3>
+              <ul class="footer__item">
+                <li class="footer__list">
+                  <a href="#" class="footer__link">Plans</a>
+                </li>
+                <li class="footer__list">
+                  <a href="#" class="footer__link">Features</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__block">
+              <h3 class="footer__title">Connect With Us</h3>
+              <ul class="footer__item footer__item--social">
+                <li class="footer__list">
+                  <a href="#" class="footer__link footer__link--social" aria-label="Telegram"><img
+                      src="./src/img/footer/footer-icons/telegram-icon.svg" alt="" aria-hidden="true"></a>
+                </li>
+                <li class="footer__list">
+                  <a href="#" class="footer__link footer__link--social" aria-label="Twitter"><img
+                      src="./src/img/footer/footer-icons/twitter-icon.svg" alt="" aria-hidden="true"></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer__copyright">
+          <div class="footer__copyright--right">
+            <p>@2026, All Rights Reserved <span> | Coded by Stanislav Aloshyn</span></p>
+          </div>
+          <div class="footer__copyright--policy">
+            <a href="#Termsof-Use">Terms of Use</a>
+            <a href="#Privacy-Policy">Privacy Policy</a>
+            <a href="#Cookie-Policy">Cookie Policy</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script type="module" src="./src/js/login-form.js"></script>
+</body>
+
+</html>

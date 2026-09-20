@@ -1,0 +1,128 @@
+@charset "UTF-8";
+@use "sass:map";
+/*Обнуление*/
+
+
+[class*=__container] {
+  padding: 0 20px;
+  max-width: 1345px;
+  margin: 0 auto;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box; }
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+:focus, :active {
+  outline: none; }
+
+a:focus, a:active {
+  outline: none; }
+
+nav, footer, header, aside {
+  display: block; }
+
+html, body {
+  scroll-behavior: smooth;
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 16px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%; }
+
+input, button, textarea {
+  font-family: inherit; }
+
+input::-ms-clear {
+  display: none; }
+
+button {
+  cursor: pointer; }
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0; }
+
+a, a:visited {
+  text-decoration: none; }
+  
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none; }
+
+ul li {
+  list-style: none; }
+
+img {
+  vertical-align: top; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit; }
+
+/*--------------------*/
+body {
+width: 100%;
+height: 100%;
+background-color: #0D0D0D;
+}
+
+
+
+body.lock{
+  overflow: hidden;
+}
+$breakpoints: (
+  "phone": 479.98px,
+  "tablet": 767.98px,
+  "desktop": 991.98px,
+  "large": 1199.98px
+);
+
+
+@mixin media($size) {
+  @media (max-width: map.get($breakpoints, $size)) {
+    @content;
+  }
+}
+
+// 1. Переменные шрифтов
+$font-inter: 'Inter', sans-serif;
+$font-lato: 'Lato', sans-serif;
+$font-manrope: 'Manrope', sans-serif;
+$font-martel: 'Martel', serif;
+
+// 2. Миксины для шрифтов
+@mixin ff-inter {
+  font-family: $font-inter;
+}
+
+@mixin ff-lato {
+  font-family: $font-lato;
+}
+
+@mixin ff-manrope {
+  font-family: $font-manrope;
+}
+
+@mixin ff-martel {
+  font-family: $font-martel;
+}
+
+
+
+
+

@@ -1,0 +1,407 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="MovieWatch - Stream your favorite movies, TV shows, and series online." />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:opsz@14..32&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Manrope:wght@500&family=Martel:wght@400;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="icon" type="image/png" href="./src/img/header/header-logo/logo.png" />
+    <title>MovieWatch — Movie Details</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__container">
+                <a href="./index.html" class="header__logo">
+                    <img src="./src/img/header/header-logo/logo.png" class="header__logo-img" alt="MovieWatch">
+                </a>
+                <nav class="header__menu menu">
+                    <ul id="target" class="menu__list">
+                        <li class="menu__item">
+                            <a href="./index.html" class="menu__link">Home</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="./index.html#Genres" class="menu__link">Genre</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="./index.html#Movies" class="menu__link">Movies</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="./tvshows.html" class="menu__link">TV Shows</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#Anime" class="menu__link">Anime</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="./subscribe.html" class="menu__link">Subscriptions</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div id="container-a" class="header__actions">
+                    <div class="header__search">
+                        <form class="header__search-form" action="" method="get">
+                            <input class="header__search-input" type="text" placeholder="Search here."
+                                aria-label="Search input">
+                            <button class="header__actions-btn" type="submit" aria-label="Search"></button>
+                        </form>
+                    </div>
+                    <div id="child" class="header__login">
+                        <a href="./login-form.html" class="header__login-link">
+                            <img src="./src/img/header/header-login/login-svg.svg" alt="" aria-hidden="true">
+                            <span>Sign in/Sign up</span>
+                        </a>
+                    </div>
+                    <div class="header__burger" role="button" aria-label="Toggle navigation menu" aria-expanded="false">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main>
+            <section class="movie-detail movie">
+                <div class="movie__bg" id="movie-bg"></div>
+                <div class="movie__container">
+                    <div class="btn__home">
+                        <a href="./index.html" class="btn__home-link">
+                            <svg class="btn__home-icon" width="28" height="28" viewBox="0 0 28 28" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <rect class="btn__home-bg" width="28" height="28" rx="8" fill="#F9F9F9"
+                                    fill-opacity="0.2" />
+                                <path class="btn__home-arrow" d="M15.68 17.36L12.32 14L15.68 10.64" stroke="#F9F9F9"
+                                    stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg> Back to Home</a>
+                    </div>
+                    <div class="movie__block">
+                        <div class="movie__poster">
+                            <img src="./src/img/movie-detail/movie-poster/movie-poster.png" alt="movie-poster"
+                                class="movie__poster-img">
+                        </div>
+                        <div class="movie__description">
+                            <div class="movie__description-header">
+                                <div class="movie__t">
+                                    <h1 class="movie__title">The Crown <span class="movie__year"> 2016–2023 </span></h1>
+                                </div>
+                                <div class="movie__comments-stars">
+                                    <span class="movie__comments">28 Comments </span>
+                                    <span class="movie__stars">
+                                        <img src="./src/img/movie-detail/movie-stars/star.svg" alt="star"
+                                            class="movie__stars-img">
+                                        <img src="./src/img/movie-detail/movie-stars/star.svg" alt="star"
+                                            class="movie__stars-img">
+                                        <img src="./src/img/movie-detail/movie-stars/star.svg" alt="star"
+                                            class="movie__stars-img">
+                                        <img src="./src/img/movie-detail/movie-stars/star.svg" alt="star"
+                                            class="movie__stars-img">
+                                        <img src="./src/img/movie-detail/movie-stars/star.svg" alt="star"
+                                            class="movie__stars-img">
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="movie__about">
+                                <p class="movie__genre">Genre: Historical drama</p>
+                                <p class="movie__time">Time: 58m</p>
+                                <p class="movie__actors">Stars: Claire Foy, Olivia Colman, Matt Smith, Tobias Menzies
+                                </p>
+                                <p class="movie__created">Created by: Peter Morgan</p>
+                                <p class="movie__network">Network: Netflix</p>
+                                <span class="movie__rate">8.6</span>
+                                <p class="movie__text-description">After the king's sudden death, Elizabeth's seemingly
+                                    quiet life is rattled with personal trials and tribulations and the affairs of the
+                                    state as she succeeds to the throne of the British monarchy.</p>
+                                <div class="movie__actions">
+                                    <button class="movie__btn movie__btn--primary" type="button">
+                                        <img src="./src/img/hero/hero-btn-play/hero-btn-play.svg" alt=""
+                                            aria-hidden="true">
+                                        <span>Watch Now</span>
+                                    </button>
+                                    <button class="movie__btn movie__btn--secondary" type="button">
+                                        <span>+ Watchlist</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="comments">
+                <div class="comments__container">
+                    <div class="comments__nav">
+                        <h2 class="comments__title"> <img
+                                src="./src/img/movie-detail/comments-section-icon/comments-icon.svg" alt=""> Comments
+                            <span>28 Comments </span>
+                        </h2>
+                        <button class="comments__latest-btn" type="button">Latest <img
+                                src="./src/img/movie-detail/comments-section-icon/btn-latest-icon.svg" alt="">
+                        </button>
+                    </div>
+                    <div class="comments__block">
+                        <ul class="comments__list">
+                            <li class="comments__item">
+                                <div class="comments__stars">
+                                    <div class="comments__stars-icon">
+                                        <img src="./src/img/movie-detail/movie-stars/star.svg" alt="">
+                                        <img src="./src/img/movie-detail/movie-stars/star.svg" alt="">
+                                        <img src="./src/img/movie-detail/movie-stars/star.svg" alt="">
+                                        <img src="./src/img/movie-detail/movie-stars/star.svg" alt="">
+                                        <img src="./src/img/movie-detail/movie-stars/star.svg" alt="">
+                                    </div>
+                                    <a href="#" class="comments__dots">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </a>
+                                </div>
+                                <span class="comments__name">Samantha D.</span>
+                                <p class="comments__text">"The Crown" is seriously addictive! The drama, the history,
+                                    the scandals—it's all so captivating. And the cast? Absolutely brilliant! Can't get
+                                    enough of this royal rollercoaster!"</p>
+                                <span class="comments__date">Posted on August 14, 2023</span>
+                            </li>
+                            <li class="comments__item">
+                                <div class="comments__stars">
+                                    <div class="comments__stars-icon">
+                                        <img src="./src/img/movie-detail/movie-stars/star.svg" alt="">
+                                        <img src="./src/img/movie-detail/movie-stars/star.svg" alt="">
+                                        <img src="./src/img/movie-detail/movie-stars/star.svg" alt="">
+                                        <img src="./src/img/movie-detail/movie-stars/star.svg" alt="">
+                                        <img src="./src/img/movie-detail/movie-stars/star.svg" alt="">
+                                    </div>
+                                    <a href="#" class="comments__dots">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </a>
+                                </div>
+                                <span class="comments__name">Leslie Alexander</span>
+                                <p class="comments__text">"The Crown" is an absolute binge-worthy masterpiece! It
+                                    flawlessly combines history with drama, keeping viewers hooked with its gripping
+                                    storytelling and stellar performances. A must-watch for anyone fascinated by the
+                                    intricacies of royal life."</p>
+                                <span class="comments__date">Posted on August 14, 2023</span>
+                            </li>
+                        </ul>
+                        <ul class="comments__list">
+                            <li class="comments__item">
+                                <div class="comments__stars">
+                                    <div class="comments__stars-icon">
+                                        <img src="./src/img/movie-detail/movie-stars/star.svg" alt="">
+                                        <img src="./src/img/movie-detail/movie-stars/star.svg" alt="">
+                                        <img src="./src/img/movie-detail/movie-stars/star.svg" alt="">
+                                        <img src="./src/img/movie-detail/movie-stars/star.svg" alt="">
+                                        <img src="./src/img/movie-detail/movie-stars/star.svg" alt="">
+                                    </div>
+                                    <a href="#" class="comments__dots">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </a>
+                                </div>
+                                <span class="comments__name">Rock Lee</span>
+                                <p class="comments__text">"The Crown" is seriously addictive! The drama, the history,
+                                    the scandals—it's all so captivating. And the cast? Absolutely brilliant! Can't get
+                                    enough of this royal rollercoaster!"</p>
+                                <span class="comments__date">Posted on August 14, 2023</span>
+                            </li>
+                            <li class="comments__item">
+                                <div class="comments__stars">
+                                    <div class="comments__stars-icon">
+                                        <img src="./src/img/movie-detail/movie-stars/star.svg" alt="">
+                                        <img src="./src/img/movie-detail/movie-stars/star.svg" alt="">
+                                        <img src="./src/img/movie-detail/movie-stars/star.svg" alt="">
+                                        <img src="./src/img/movie-detail/movie-stars/star.svg" alt="">
+                                        <img src="./src/img/movie-detail/movie-stars/star.svg" alt="">
+                                    </div>
+                                    <a href="#" class="comments__dots">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </a>
+                                </div>
+                                <span class="comments__name">Saitama</span>
+                                <p class="comments__text">"The Crown" is seriously addictive! The drama, the history,
+                                    the scandals—it's all so captivating. And the cast? Absolutely brilliant! Can't get
+                                    enough of this royal rollercoaster!"</p>
+                                <span class="comments__date">Posted on August 14, 2023</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="comments__load">
+                        <button class="comments__load-btn" type="button">Load More</button>
+                    </div>
+                </div>
+            </section>
+            <section class="related">
+                <div class="related__container">
+                    <div class="related__nav">
+                        <h2 class="related__title"><img src="./src/img/you-like-section/like.svg" alt="">Related movies
+                        </h2>
+                        <a href="#View-All" class="view" id="view-all-related">View All</a>
+                    </div>
+                    <div class="related__block">
+                        <ul class="related__list" id="related-movies-list">
+                            <li class="related__items">
+                                <a href="./movie-detail.html" class="related__item">
+                                    <div class="related__poster">
+                                        <img src="./src/img/rated-section/rated-posters/SpiderMan.png" alt="SpiderMan"
+                                            loading="lazy">
+                                        <span class="related__genres">Fantasy</span>
+                                    </div>
+                                    <p class="related__name">SpiderMan: Across The Spider...<span
+                                            class="related__rate">8.7</span></p>
+                                    <div class="related__description">
+                                        <span class="related__description-year">June 2, 2023</span>
+                                        <p class="related__description-about">In an attempt to curb the Spot, a
+                                            scientist, from harnessing the power of the multiverse...</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="related__items">
+                                <a href="#" class="related__item">
+                                    <div class="related__poster">
+                                        <img src="./src/img/rated-section/rated-posters/GuardiansoftheGalaxy.png"
+                                            alt="Guardians of the Galaxy" loading="lazy">
+                                        <span class="related__genres">Fantasy</span>
+                                    </div>
+                                    <p class="related__name">Guardians of the Galaxy<span
+                                            class="related__rate">7.9</span></p>
+                                    <div class="related__description">
+                                        <span class="related__description-year">May 5, 2023</span>
+                                        <p class="related__description-about">Still reeling from the loss of Gamora,
+                                            Peter Quill must rally his team to defend the universe and...</p>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="footer__container">
+                <div class="footer__flex-block">
+                    <div class="footer__flex">
+                        <div class="footer__block">
+                            <h3 class="footer__title">Home</h3>
+                            <ul class="footer__item">
+                                <li class="footer__list">
+                                    <a href="#" class="footer__link">Categories</a>
+                                </li>
+                                <li class="footer__list">
+                                    <a href="#" class="footer__link">Devices</a>
+                                </li>
+                                <li class="footer__list">
+                                    <a href="#" class="footer__link">Pricing</a>
+                                </li>
+                                <li class="footer__list">
+                                    <a href="#" class="footer__link">FAQ</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer__block">
+                            <h3 class="footer__title">Movies</h3>
+                            <ul class="footer__item">
+                                <li class="footer__list">
+                                    <a href="./index.html#Genres" class="footer__link">Genres</a>
+                                </li>
+                                <li class="footer__list">
+                                    <a href="#" class="footer__link">Trending</a>
+                                </li>
+                                <li class="footer__list">
+                                    <a href="#" class="footer__link">New Release</a>
+                                </li>
+                                <li class="footer__list">
+                                    <a href="#" class="footer__link">Popular</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer__flex">
+                        <div class="footer__block">
+                            <h3 class="footer__title">Shows</h3>
+                            <ul class="footer__item">
+                                <li class="footer__list">
+                                    <a href="./index.html#Genres" class="footer__link">Genres</a>
+                                </li>
+                                <li class="footer__list">
+                                    <a href="#" class="footer__link">Trending</a>
+                                </li>
+                                <li class="footer__list">
+                                    <a href="#" class="footer__link">New Release</a>
+                                </li>
+                                <li class="footer__list">
+                                    <a href="#" class="footer__link">Popular</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer__block">
+                            <h3 class="footer__title">Support</h3>
+                            <ul class="footer__item">
+                                <li class="footer__list">
+                                    <a href="./contact.html" class="footer__link">Contact Us</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer__flex">
+                        <div class="footer__block">
+                            <h3 class="footer__title">Subscription</h3>
+                            <ul class="footer__item">
+                                <li class="footer__list">
+                                    <a href="#" class="footer__link">Plans</a>
+                                </li>
+                                <li class="footer__list">
+                                    <a href="#" class="footer__link">Features</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer__block">
+                            <h3 class="footer__title">Connect With Us</h3>
+                            <ul class="footer__item footer__item--social">
+                                <li class="footer__list">
+                                    <a href="#" class="footer__link footer__link--social" aria-label="Telegram"><img
+                                            src="./src/img/footer/footer-icons/telegram-icon.svg" alt=""
+                                            aria-hidden="true"></a>
+                                </li>
+                                <li class="footer__list">
+                                    <a href="#" class="footer__link footer__link--social" aria-label="Twitter"><img
+                                            src="./src/img/footer/footer-icons/twitter-icon.svg" alt=""
+                                            aria-hidden="true"></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__copyright">
+                    <div class="footer__copyright--right">
+                        <p>@2026, All Rights Reserved <span> | Coded by Stanislav Aloshyn</span></p>
+                    </div>
+                    <div class="footer__copyright--policy">
+                        <a href="#Termsof-Use">Terms of Use</a>
+                        <a href="#Privacy-Policy">Privacy Policy</a>
+                        <a href="#Cookie-Policy">Cookie Policy</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <div class="modal" id="trailerModal" aria-hidden="true">
+        <div class="modal__overlay" data-close></div>
+        <div class="modal__content">
+            <button class="modal__close" aria-label="Close" data-close>&times;</button>
+            <div class="modal__body">
+                <iframe src="" id="trailerPlayer" allow="autoplay; encrypted-media; fullscreen"></iframe>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="./src/js/movie-detail.js"></script>
+</body>
+
+</html>

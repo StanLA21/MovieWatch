@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="MovieWatch - Stream your favorite movies, TV shows, and series online." />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:opsz@14..32&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Manrope:wght@500&family=Martel:wght@400;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="icon" type="image/png" href="./src/img/header/header-logo/logo.png" />
+    <title>MovieWatch — Contact-Us</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__container">
+                <a href="./index.html" class="header__logo">
+                    <img src="./src/img/header/header-logo/logo.png" class="header__logo-img" alt="MovieWatch">
+                </a>
+                <nav class="header__menu menu">
+                    <ul id="target" class="menu__list">
+                        <li class="menu__item">
+                            <a href="./index.html" class="menu__link">Home</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="./index.html#Genres" class="menu__link">Genre</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="./index.html#Movies" class="menu__link">Movies</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="./tvshows.html" class="menu__link">TV Shows</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#Anime" class="menu__link">Anime</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="./subscribe.html" class="menu__link">Subscriptions</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div id="container-a" class="header__actions">
+                    <div class="header__search">
+                        <form class="header__search-form" action="" method="get">
+                            <input class="header__search-input" type="text" placeholder="Search here."
+                                aria-label="Search input">
+                            <button class="header__actions-btn" type="submit" aria-label="Search"></button>
+                        </form>
+                    </div>
+                    <div id="child" class="header__login">
+                        <a href="./login-form.html" class="header__login-link">
+                            <img src="./src/img/header/header-login/login-svg.svg" alt="" aria-hidden="true">
+                            <span>Sign in/Sign up</span>
+                        </a>
+                    </div>
+                    <div class="header__burger" role="button" aria-label="Toggle navigation menu" aria-expanded="false">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main>
+            <section class="contact">
+                <div class="contact__container">
+                    <h1 class="contact__title">Get in Touch with <span>MovieWatch</span></h1>
+                    <p class="contact__text">Have questions, feedback, or just want to say hello? Reach out to the
+                        MovieWatch team! We're here to assist you with any <br> inquiries or concerns you may have.
+                        Contact
+                        us today and let's chat about all things movies!</p>
+                    <div class="contact__block">
+                        <div class="contact__info">
+                            <h2 class="contact__info-title"><span>Contact</span> Information</h2>
+                            <p class="contact__info-text">Got questions or suggestions? Get in touch with MovieWatch!
+                                Email us for a quick reply, call us for a personal chat, or connect on social media for
+                                updates. Your feedback counts!
+                                Alternatively, you can fill out our form, and we'll connect with you soon!</p>
+                            <ul class="contact__info-list">
+                                <li class="contact__info-item">
+                                    <a href="tel:+10123294173" class="contact__info-link"><img
+                                            src="./src/img/contact/phone-icon.svg" alt="">+1012 3294 173</a>
+                                </li>
+                                <li class="contact__info-item">
+                                    <a href="mailto:MovieWatch@gmail.com" class="contact__info-link"><img
+                                            src="./src/img/contact/sms-icon.svg" alt="">Email:
+                                        MovieWatch@gmail.com</a>
+                                </li>
+                                <li class="contact__info-item">
+                                    <a href="https://www.google.com/maps/place/384+Dartmouth+St,+Boston,+MA+02116,+%D0%A1%D0%A8%D0%90/@42.3540499,-71.0818239,17z/data=!3m1!4b1!4m5!3m4!1s0x89e37a0a293e676b:0xe362807e885686d5!8m2!3d42.354046!4d-71.079249?entry=ttu&g_ep=EgoyMDI2MDkwOC4wIKXMDSoASAFQAw%3D%3D"
+                                        class="contact__info-link" target="_blank"><img
+                                            src="./src/img/contact/location-icon.svg" alt="">384 Dartmouth Street
+                                        Boston,
+                                        Massachusetts 72556 United States</a>
+                                </li>
+                                <li class="contact__info-item contact__info-social">
+                                    <a href="#" class="contact__info-social-icon" aria-label="Telegram"><img
+                                            src="./src/img/footer/footer-icons/telegram-icon.svg" alt=""
+                                            aria-hidden="true">
+                                    </a>
+                                    <a href="#" class="contact__info-social-icon" aria-label="Twitter"><img
+                                            src="./src/img/footer/footer-icons/twitter-icon.svg" alt=""
+                                            aria-hidden="true">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="contact__card-form">
+                            <form action="" class="contact__form" novalidate>
+                                <div class="contact__form-group">
+                                    <label for="user-name" class="contact__form-label">Name</label>
+                                    <input type="text" id="user-name" name="user-name" class="contact__form-input"
+                                        placeholder="Enter your name" required>
+                                </div>
+                                <div class="contact__form-group">
+                                    <label for="user-email" class="contact__form-label">Email</label>
+                                    <input type="email" id="user-email" name="user-email" class="contact__form-input"
+                                        placeholder="Enter your email" required>
+                                </div>
+                                <div class="contact__form-group">
+                                    <label for="subject-email" class="contact__form-label">Subject</label>
+                                    <input type="text" id="subject-email" name="subject-email"
+                                        class="contact__form-input" placeholder="Enter the subject" required>
+                                </div>
+                                <div class="contact__form-group">
+                                    <label for="message" class="contact__form-label">Message</label>
+                                    <textarea id="message" name="message" class="contact__form-textarea"
+                                        placeholder="Enter your message" required></textarea>
+                                </div>
+                                <button type="submit" class="contact__form-button">Send</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="footer__container">
+                <div class="footer__flex-block">
+                    <div class="footer__flex">
+                        <div class="footer__block">
+                            <h3 class="footer__title">Home</h3>
+                            <ul class="footer__item">
+                                <li class="footer__list">
+                                    <a href="#" class="footer__link">Categories</a>
+                                </li>
+                                <li class="footer__list">
+                                    <a href="#" class="footer__link">Devices</a>
+                                </li>
+                                <li class="footer__list">
+                                    <a href="#" class="footer__link">Pricing</a>
+                                </li>
+                                <li class="footer__list">
+                                    <a href="#" class="footer__link">FAQ</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer__block">
+                            <h3 class="footer__title">Movies</h3>
+                            <ul class="footer__item">
+                                <li class="footer__list">
+                                    <a href="./index.html#Genres" class="footer__link">Genres</a>
+                                </li>
+                                <li class="footer__list">
+                                    <a href="#" class="footer__link">Trending</a>
+                                </li>
+                                <li class="footer__list">
+                                    <a href="#" class="footer__link">New Release</a>
+                                </li>
+                                <li class="footer__list">
+                                    <a href="#" class="footer__link">Popular</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer__flex">
+                        <div class="footer__block">
+                            <h3 class="footer__title">Shows</h3>
+                            <ul class="footer__item">
+                                <li class="footer__list">
+                                    <a href="./index.html#Genres" class="footer__link">Genres</a>
+                                </li>
+                                <li class="footer__list">
+                                    <a href="#" class="footer__link">Trending</a>
+                                </li>
+                                <li class="footer__list">
+                                    <a href="#" class="footer__link">New Release</a>
+                                </li>
+                                <li class="footer__list">
+                                    <a href="#" class="footer__link">Popular</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer__block">
+                            <h3 class="footer__title">Support</h3>
+                            <ul class="footer__item">
+                                <li class="footer__list">
+                                    <a href="./contact.html" class="footer__link">Contact Us</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer__flex">
+                        <div class="footer__block">
+                            <h3 class="footer__title">Subscription</h3>
+                            <ul class="footer__item">
+                                <li class="footer__list">
+                                    <a href="#" class="footer__link">Plans</a>
+                                </li>
+                                <li class="footer__list">
+                                    <a href="#" class="footer__link">Features</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer__block">
+                            <h3 class="footer__title">Connect With Us</h3>
+                            <ul class="footer__item footer__item--social">
+                                <li class="footer__list">
+                                    <a href="#" class="footer__link footer__link--social" aria-label="Telegram"><img
+                                            src="./src/img/footer/footer-icons/telegram-icon.svg" alt=""
+                                            aria-hidden="true"></a>
+                                </li>
+                                <li class="footer__list">
+                                    <a href="#" class="footer__link footer__link--social" aria-label="Twitter"><img
+                                            src="./src/img/footer/footer-icons/twitter-icon.svg" alt=""
+                                            aria-hidden="true"></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__copyright">
+                    <div class="footer__copyright--right">
+                        <p>@2026, All Rights Reserved <span> | Coded by Stanislav Aloshyn</span></p>
+                    </div>
+                    <div class="footer__copyright--policy">
+                        <a href="#Termsof-Use">Terms of Use</a>
+                        <a href="#Privacy-Policy">Privacy Policy</a>
+                        <a href="#Cookie-Policy">Cookie Policy</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script type="module" src="./src/js/contact.js"></script>
+</body>
+
+</html>

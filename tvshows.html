@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="MovieWatch - Stream your favorite movies, TV shows, and series online." />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:opsz@14..32&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Manrope:wght@500&family=Martel:wght@400;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="icon" type="image/png" href="./src/img/header/header-logo/logo.png" />
+    <title>MovieWatch — TvShows</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__container">
+                <a href="./index.html" class="header__logo">
+                    <img src="./src/img/header/header-logo/logo.png" class="header__logo-img" alt="MovieWatch">
+                </a>
+                <nav class="header__menu menu">
+                    <ul id="target" class="menu__list">
+                        <li class="menu__item">
+                            <a href="./index.html" class="menu__link">Home</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="./index.html#Genres" class="menu__link">Genre</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="./index.html#Movies" class="menu__link">Movies</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="./tvshows.html" class="menu__link">TV Shows</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#Anime" class="menu__link">Anime</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="./subscribe.html" class="menu__link">Subscriptions</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div id="container-a" class="header__actions">
+                    <div class="header__search">
+                        <form class="header__search-form" action="" method="get">
+                            <input class="header__search-input" type="text" placeholder="Search here."
+                                aria-label="Search input">
+                            <button class="header__actions-btn" type="submit" aria-label="Search"></button>
+                        </form>
+                    </div>
+                    <div id="child" class="header__login">
+                        <a href="./login-form.html" class="header__login-link">
+                            <img src="./src/img/header/header-login/login-svg.svg" alt="" aria-hidden="true">
+                            <span>Sign in/Sign up</span>
+                        </a>
+                    </div>
+                    <div class="header__burger" role="button" aria-label="Toggle navigation menu" aria-expanded="false">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main>
+            <section class="tvshows">
+                <div class="tvshows__container">
+                    <h1 class="tvshows__title">Your Gateway to Movie <span>Magic</span></h1>
+                    <p class="tvshows__text"> Dive into the world of cinema with MovieWatch, where you can search and
+                        find everything you want to watch. <br> Your ultimate movie destination awaits!</p>
+                    <form action="" class="tvshows__form" id="tvshows-search-form">
+                        <input type="search" class="tvshows__input" id="tvshows-search-input"
+                            placeholder="Search movie you want...">
+                        <button class="tvshows__btn" type="submit" aria-label="Search"><img
+                                src="./src/img/header/header-search/search.svg" alt=""></button>
+                    </form>
+                    <div class="tv-shows__block">
+                        <ul class="tv-shows__list" id="tvshows-list">
+                            <li class="tv-shows__items">
+                                <a href="#" class="tv-shows__item">
+                                    <div class="tv-shows__poster">
+                                        <img src="./src/img/you-like-section/you-like-poster/Chernobyldisaster.png"
+                                            alt="Chernobyldisaster" loading="lazy">
+                                        <span class="tv-shows__genres">Documentary <span>-</span> Horror <span>-</span>
+                                            Tragedy</span>
+                                    </div>
+                                    <p class="tv-shows__name">Chernobyl disaster<span class="tv-shows__rate">9.3</span>
+                                    </p>
+                                    <div class="tv-shows__description">
+                                        <span class="tv-shows__description-year">April 26, 1986 <span>-</span> 5
+                                            Ep</span>
+                                        <p class="tv-shows__description-about">The Chernobyl disaster began on 26 April
+                                            1986 with the
+                                            explosion
+                                            of the No. 4 reactor of...</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="tv-shows__items">
+                                <a href="#" class="tv-shows__item">
+                                    <div class="tv-shows__poster">
+                                        <img src="./src/img/you-like-section/you-like-poster/Loki.png" alt="Loki"
+                                            loading="lazy">
+                                        <span class="tv-shows__genres">Action <span>-</span> Fantasy</span>
+                                    </div>
+                                    <p class="tv-shows__name">Loki<span class="tv-shows__rate">8.2</span></p>
+                                    <div class="tv-shows__description">
+                                        <span class="tv-shows__description-year">June 9, 2021 <span>-</span> Season
+                                            2</span>
+                                        <p class="tv-shows__description-about">After stealing the Tesseract, Loki comes
+                                            into contact with a
+                                            mysterious organization that...</p>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="tv-shows__list">
+                            <li class="tv-shows__items">
+                                <a href="#" class="tv-shows__item">
+                                    <div class="tv-shows__poster">
+                                        <img src="./src/img/you-like-section/you-like-poster/GenV.png" alt="GenV"
+                                            loading="lazy">
+                                        <span class="tv-shows__genres">Action <span>-</span> Superhero <span>-</span>
+                                            Fantasy</span>
+                                    </div>
+                                    <p class="tv-shows__name">Gen V<span class="tv-shows__rate">7.9</span></p>
+                                    <div class="tv-shows__description">
+                                        <span class="tv-shows__description-year">September 29, 2023 <span>-</span>
+                                            Season 1</span>
+                                        <p class="tv-shows__description-about">The lives of hormonal, competitive
+                                            Superheroes as they put
+                                            their physical, sexual, and moral...</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="tv-shows__items">
+                                <a href="#" class="tv-shows__item">
+                                    <div class="tv-shows__poster">
+                                        <img src="./src/img/you-like-section/you-like-poster/RickandMorty.png"
+                                            alt="RickandMorty" loading="lazy">
+                                        <span class="tv-shows__genres">Sitcom</span>
+                                    </div>
+                                    <p class="tv-shows__name">Rick and Morty<span class="tv-shows__rate">9.1</span></p>
+                                    <div class="tv-shows__description">
+                                        <span class="tv-shows__description-year">December 2, 2013 <span>-</span> Season
+                                            7</span>
+                                        <p class="tv-shows__description-about">Rick, an alcoholic sociopath and
+                                            scientist, lives with his
+                                            daughter Beth's family. Apart from building...</p>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="pagination" id="tvshows-pagination"></div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="footer__container">
+                <div class="footer__flex-block">
+                    <div class="footer__flex">
+                        <div class="footer__block">
+                            <h3 class="footer__title">Home</h3>
+                            <ul class="footer__item">
+                                <li class="footer__list">
+                                    <a href="#" class="footer__link">Categories</a>
+                                </li>
+                                <li class="footer__list">
+                                    <a href="#" class="footer__link">Devices</a>
+                                </li>
+                                <li class="footer__list">
+                                    <a href="#" class="footer__link">Pricing</a>
+                                </li>
+                                <li class="footer__list">
+                                    <a href="#" class="footer__link">FAQ</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer__block">
+                            <h3 class="footer__title">Movies</h3>
+                            <ul class="footer__item">
+                                <li class="footer__list">
+                                    <a href="./index.html#Genres" class="footer__link">Genres</a>
+                                </li>
+                                <li class="footer__list">
+                                    <a href="#" class="footer__link">Trending</a>
+                                </li>
+                                <li class="footer__list">
+                                    <a href="#" class="footer__link">New Release</a>
+                                </li>
+                                <li class="footer__list">
+                                    <a href="#" class="footer__link">Popular</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer__flex">
+                        <div class="footer__block">
+                            <h3 class="footer__title">Shows</h3>
+                            <ul class="footer__item">
+                                <li class="footer__list">
+                                    <a href="./index.html#Genres" class="footer__link">Genres</a>
+                                </li>
+                                <li class="footer__list">
+                                    <a href="#" class="footer__link">Trending</a>
+                                </li>
+                                <li class="footer__list">
+                                    <a href="#" class="footer__link">New Release</a>
+                                </li>
+                                <li class="footer__list">
+                                    <a href="#" class="footer__link">Popular</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer__block">
+                            <h3 class="footer__title">Support</h3>
+                            <ul class="footer__item">
+                                <li class="footer__list">
+                                    <a href="./contact.html" class="footer__link">Contact Us</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer__flex">
+                        <div class="footer__block">
+                            <h3 class="footer__title">Subscription</h3>
+                            <ul class="footer__item">
+                                <li class="footer__list">
+                                    <a href="#" class="footer__link">Plans</a>
+                                </li>
+                                <li class="footer__list">
+                                    <a href="#" class="footer__link">Features</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer__block">
+                            <h3 class="footer__title">Connect With Us</h3>
+                            <ul class="footer__item footer__item--social">
+                                <li class="footer__list">
+                                    <a href="#" class="footer__link footer__link--social" aria-label="Telegram"><img
+                                            src="./src/img/footer/footer-icons/telegram-icon.svg" alt=""
+                                            aria-hidden="true"></a>
+                                </li>
+                                <li class="footer__list">
+                                    <a href="#" class="footer__link footer__link--social" aria-label="Twitter"><img
+                                            src="./src/img/footer/footer-icons/twitter-icon.svg" alt=""
+                                            aria-hidden="true"></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__copyright">
+                    <div class="footer__copyright--right">
+                        <p>@2026, All Rights Reserved <span> | Coded by Stanislav Aloshyn</span></p>
+                    </div>
+                    <div class="footer__copyright--policy">
+                        <a href="#Termsof-Use">Terms of Use</a>
+                        <a href="#Privacy-Policy">Privacy Policy</a>
+                        <a href="#Cookie-Policy">Cookie Policy</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script type="module" src="./src/js/tvshows.js"></script>
+</body>
+
+</html>
