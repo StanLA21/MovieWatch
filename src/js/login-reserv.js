@@ -17,7 +17,7 @@ function checkScreenSize() {
     } else {
         // Если экран большой — возвращаем текст обратно
         reservLink.innerHTML = `
-        <img src="./src/img/header/header-login/login-svg.svg" alt="">
+        <img src="./img/header/header-login/login-svg.svg" alt="">
         <span>Sign in/Sign up</span>
         `;
     }

@@ -11,7 +11,7 @@ function initAuthHeader() {
     // Заменяем ссылку Sign in на имя пользователя и кнопку Выход
     loginContainer.innerHTML = `
       <div class="header__user">
-        <span class="header__user-name"><img src="./src/img/header/header-login/profile-icon.svg" alt="" aria-hidden="true"> Hi, ${userName}</span>
+        <span class="header__user-name"><img src="./img/header/header-login/profile-icon.svg" alt="" aria-hidden="true"> Hi, ${userName}</span>
         <button type="button" class="header__logout-btn" id="logout-btn" title="Exit">Exit</button>
       </div>
     `;
