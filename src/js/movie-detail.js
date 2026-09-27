@@ -265,7 +265,7 @@ function renderMovieReviews(reviewsData) {
         const starsCount = rating ? Math.max(1, Math.round(rating / 2)) : 5;
         let starsHtml = '';
         for (let i = 0; i < starsCount; i++) {
-            starsHtml += `<img src="./src/img/movie-detail/movie-stars/star.svg" alt="star">`;
+            starsHtml += `<img src="./img/movie-detail/movie-stars/star.svg" alt="star">`;
         }
         return starsHtml;
     };
