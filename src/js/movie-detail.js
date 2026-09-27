@@ -20,6 +20,9 @@ if (detailContainer && !movieId) {
 
 async function initMoviePage() {
     initSearch();
+
+    if (!detailContainer) return;
+
     if (!movieId) {
         console.error('ID не найден в URL');
         return;

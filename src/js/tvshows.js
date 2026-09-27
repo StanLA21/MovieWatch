@@ -36,6 +36,9 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 async function loadTVShows() {
+
+    if (!listElement) return;
+    
     const endpoint = currentQuery
         ? `${BASE_URL}/search/tv?api_key=${API_KEY}&query=${encodeURIComponent(currentQuery)}&page=${currentPage}`
         : `${BASE_URL}/tv/popular?api_key=${API_KEY}&page=${currentPage}`;
