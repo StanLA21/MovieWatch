@@ -24,12 +24,15 @@ let totalPages = 1;
 document.addEventListener('DOMContentLoaded', () => {
     loadTVShows();
 
-    searchForm.addEventListener('submit', (e) => {
-        e.preventDefault();
-        currentQuery = searchInput.value.trim();
-        currentPage = 1;
-        loadTVShows();
-    });
+
+    if (searchForm) {
+        searchForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            currentQuery = searchInput.value.trim();
+            currentPage = 1;
+            loadTVShows();
+        });
+    }
 });
 
 async function loadTVShows() {

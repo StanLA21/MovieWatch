@@ -8,6 +8,5 @@ import './login-form.js';
 import { initSearch } from './movies.js';
 document.addEventListener('DOMContentLoaded', () => {
     initSearch(); // Инициализируем поиск хедера
-    loadTVShows();
     // ...
 });

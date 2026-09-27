@@ -153,7 +153,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 document.addEventListener('DOMContentLoaded', () => {
-    initSearch(); // Инициализируем поиск хедера
-    loadTVShows();
+  initSearch(); // Инициализируем поиск хедера
     // ...
 });
